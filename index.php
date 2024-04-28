@@ -11,10 +11,10 @@ $aldeano->recolectar($arbusto);
 
 require_once("pesquero.php");
 require_once("bancodepesca.php");
-
-
-$bancoDePesca = new BancoDePesca();
+// Instanciacion  Pesquero--BancoDePesca
 $pesquero = new Pesquero();
+$bancoDePesca = new BancoDePesca();
 
+// Ejecucion
 $pesquero->recolectar($bancoDePesca);
 ?>

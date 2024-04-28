@@ -1,5 +1,5 @@
-<?
-class Pesquero {
+<?php
+class Pesquero{
     private $velocidadRecoleccion = 18;
 
     public function recolectar(BancoDePesca $bancoDePesca) {

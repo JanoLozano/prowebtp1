@@ -1,5 +1,5 @@
 <?php
-class BancoDePesca {
+class BancoDePesca{
     private $cantidadAlimento = 225; 
 
     public function getAlimento(): int {
