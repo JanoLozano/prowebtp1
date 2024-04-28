@@ -2,7 +2,7 @@
 class Arbusto{
     private $cantAlimento = 125;
 
-    public function getAlimento(){
+    public function getAlimento(): int{
         return $this->cantAlimento;
     }
 }
