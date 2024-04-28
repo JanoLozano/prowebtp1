@@ -10,10 +10,21 @@ require_once("bancodepesca.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP1</title>
+    <title>TP-1-PRODUCCION-WEB</title>
     <link rel="stylesheet" href="estilo.css">
+    <script>/*esta parte del codigo la busque en google para poder agregarle un cargador con javascrip y los sonidos*/
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader');
+            loader.classList.add('hidden');
+        });
+        window.addEventListener('load', () => {
+            const loaderSound = new Audio('sonidos/cargaindex.mp3');
+            loaderSound.play();
+        });
+    </script>
 </head>
-<body>
+<body class="body-index">
+    <div class="loader"></div>
     <div class="container">
         <h1>El Aldeano Y El Pesquero</h1>
         
@@ -39,5 +50,8 @@ require_once("bancodepesca.php");
             ?>
         </div>
     </div>
+    <p class="link-p-index">
+        <a href="link.php" class="link-button">Volver a la pagina principal</a>
+    </p>
 </body>
 </html>

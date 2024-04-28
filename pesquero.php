@@ -5,7 +5,7 @@ class Pesquero{
     public function recolectar(BancoDePesca $bancoDePesca) {
         $tiempo = ceil($bancoDePesca->getAlimento() / $this->velocidadRecoleccion);
 
-        echo "el aldeano pesquero recolecto comida en $tiempo minutos.";
+        echo "<p>¡El aldeano pesquero recolecto comida en $tiempo minutos!</p>";
     }
 }
 ?>
